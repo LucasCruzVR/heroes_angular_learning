@@ -11,6 +11,7 @@
     <div *ngFor="let message of messageService.getMessage()">
       <p>{{ message }}</p>
     </div>
+    <button mat-raised-button color="warn" (click)="messageService.clear()">Clear messages</button>
   </mat-expansion-panel>
 </mat-accordion>
-<button mat-raised-button color="warn" (click)="messageService.clear()">Clear messages</button>
+

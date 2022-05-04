@@ -2,7 +2,11 @@
   <mat-toolbar color="primary">
     <span>Heroes</span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with menu icon"
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Dashboard"
+      routerLink="/dashboard" matTooltip="Dashboard">
+      <mat-icon>dashboard</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Heroes"
       routerLink="/heroes" matTooltip="Heroes">
       <mat-icon>sports_martial_arts</mat-icon>
     </button>

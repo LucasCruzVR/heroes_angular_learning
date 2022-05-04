@@ -12,4 +12,5 @@ export class HeroService {
     const heroes = of(HEROES);
     return heroes;
   }
+
 }
