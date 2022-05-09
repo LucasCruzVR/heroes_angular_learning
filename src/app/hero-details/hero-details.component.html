@@ -1,6 +1,16 @@
 <div>
-  <h2>Selected hero: </h2>
-  <div *ngIf="hero">
-    <p>{{ hero.name }}</p>
-  </div>
+  <h1>Hero Details</h1>
+  <mat-card>
+    <mat-card-content *ngIf="hero">
+      <mat-form-field>
+        <mat-label>ID</mat-label>
+        <input matInput disabled [value]="hero.id">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput [value]="hero.name">
+      </mat-form-field>
+    </mat-card-content>
+  </mat-card>
+  <button mat-raised-button (click)="goBack()">Go back</button>
 </div>
